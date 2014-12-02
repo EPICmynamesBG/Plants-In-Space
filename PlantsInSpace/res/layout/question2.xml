@@ -6,6 +6,7 @@
 
     <ImageView
         android:id="@+id/sun"
+        android:contentDescription="Sunlight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -21,5 +22,30 @@
         android:text="@string/lightOrDark"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/sunlightButton"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/sun"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="@string/sunlight"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="@dimen/defaultButtonTextSize"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/darkButton"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:text="@string/darkness"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="@dimen/defaultButtonTextSize"
+        android:textStyle="bold" />
 
 </RelativeLayout>

@@ -31,7 +31,7 @@
         android:background="@android:color/transparent"
         android:text="@string/Earth"
         android:textColor="@android:color/holo_orange_light"
-        android:textSize="25sp"
+        android:textSize="@dimen/defaultButtonTextSize"
         android:textStyle="bold" />
 
     <Button
@@ -45,6 +45,6 @@
         android:text="@string/Space"
         android:textStyle="bold"
         android:textColor="@android:color/holo_orange_light"
-        android:textSize="25sp" />
+        android:textSize="@dimen/defaultButtonTextSize" />
 
 </RelativeLayout>
