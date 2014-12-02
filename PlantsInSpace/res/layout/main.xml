@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/outerspace" >
+
+    <ImageView
+        android:id="@+id/earth"
+        android:contentDescription="Earth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/earth" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/earth"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:focusableInTouchMode="false"
+        android:text="@string/startButton"
+        android:textColor="@android:color/holo_green_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/plantsinspacetextimage"
+        android:contentDescription="Plants in Space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/plantsinspacetext" />
+
+</RelativeLayout>
