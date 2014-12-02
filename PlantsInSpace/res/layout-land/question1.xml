@@ -9,8 +9,7 @@
         android:contentDescription="Earth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
         android:src="@drawable/earth" />
 
     <TextView
@@ -26,8 +25,8 @@
     <Button
         android:id="@+id/earthButton"
         android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:background="@android:color/transparent"
         android:text="@string/Earth"
@@ -38,10 +37,9 @@
     <Button
         android:id="@+id/spaceButton"
         android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
         android:background="@android:color/transparent"
         android:text="@string/Space"
         android:textStyle="bold"

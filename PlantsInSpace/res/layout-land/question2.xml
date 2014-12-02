@@ -2,50 +2,50 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/outerspace" >
+    android:background="@drawable/lightordark" >
 
     <ImageView
-        android:id="@+id/earth"
-        android:contentDescription="Earth"
+        android:id="@+id/sun"
+        android:contentDescription="Sunlight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/earth" />
+        android:layout_above="@id/darkButton"
+        android:src="@drawable/hazy_sun" />
 
     <TextView
-        android:id="@+id/earthOrSpace"
+        android:id="@+id/lightOrDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="@string/earthOrSpace"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="@string/lightOrDark"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@android:color/white"
-         />
+        android:textColor="@android:color/white" />
 
     <Button
-        android:id="@+id/earthButton"
-        android:layout_width="250dp"
+        android:id="@+id/sunlightButton"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_alignBottom="@+id/sun"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:background="@android:color/transparent"
-        android:text="@string/Earth"
+        android:text="@string/sunlight"
         android:textColor="@android:color/holo_orange_light"
         android:textSize="@dimen/defaultButtonTextSize"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/spaceButton"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/darkButton"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
         android:background="@android:color/transparent"
-        android:text="@string/Space"
-        android:textStyle="bold"
+        android:text="@string/darkness"
         android:textColor="@android:color/holo_orange_light"
-        android:textSize="@dimen/defaultButtonTextSize" />
+        android:textSize="@dimen/defaultButtonTextSize"
+        android:textStyle="bold" />
 
 </RelativeLayout>
