@@ -8,5 +8,6 @@
     <string name="lightOrDark">Will your plant grow in sunlight or darkness?</string>
     <string name="sunlight">Sunlight</string>
     <string name="darkness">Darkness</string>
+    <string name="growingPlant">Please wait while your plant grows...</string>
 
 </resources>

@@ -4,19 +4,39 @@
     android:layout_height="match_parent"
     android:background="@drawable/outerspace" >
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/progressBar1"
-        android:layout_below="@+id/progressBar1" />
-
     <ProgressBar
-        android:id="@+id/progressBar1"
+        android:id="@+id/loadingCircle"
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadingCircle"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Load progress"
+        android:fitsSystemWindows="true"
+        android:maxWidth="100dp"
+        android:progressBackgroundTint="@android:color/holo_blue_dark"
+        android:progressTint="@android:color/holo_blue_bright"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loadingCircle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="@string/growingPlant"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
 
 </RelativeLayout>
