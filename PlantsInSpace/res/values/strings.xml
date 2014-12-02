@@ -2,5 +2,9 @@
 
     <string name="app_name">Plants in Space</string>
     <string name="startButton">Start</string>
+    <string name="earthOrSpace">Would you like to grow your plant on Earth or in Space?</string>
+    <string name="Earth">Earth</string>
+    <string name="Space">Space</string>
+    <string name="lightOrDark">Will your plant grow in sunlight or darkness?</string>
 
 </resources>
