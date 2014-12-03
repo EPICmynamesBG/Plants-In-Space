@@ -1,4 +1,4 @@
 <resources>
-    <dimen name="defaultButtonTextSize">25sp</dimen>
+    <dimen name="defaultButtonTextSize">30sp</dimen>
     
 </resources>

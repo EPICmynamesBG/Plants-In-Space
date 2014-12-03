@@ -11,30 +11,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/darkButton"
         android:src="@drawable/hazy_sun" />
 
     <TextView
         android:id="@+id/lightOrDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text="@string/lightOrDark"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@android:color/white" />
-
-    <Button
-        android:id="@+id/sunlightButton"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignBottom="@+id/sun"
-        android:layout_centerHorizontal="true"
-        android:background="@android:color/transparent"
-        android:text="@string/sunlight"
-        android:textColor="@android:color/holo_orange_light"
-        android:textSize="@dimen/defaultButtonTextSize"
-        android:textStyle="bold" />
 
     <Button
         android:id="@+id/darkButton"
@@ -45,6 +33,18 @@
         android:background="@android:color/transparent"
         android:text="@string/darkness"
         android:textColor="@android:color/holo_orange_light"
+        android:textSize="@dimen/defaultButtonTextSize"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sunlightButton"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/sun"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:text="@string/sunlight"
+        android:textColor="@android:color/holo_blue_light"
         android:textSize="@dimen/defaultButtonTextSize"
         android:textStyle="bold" />
 

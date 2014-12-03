@@ -21,7 +21,8 @@
         android:layout_marginTop="30dp"
         android:text="Results:"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/ouputText"
@@ -33,7 +34,8 @@
         android:gravity="center"
         android:text="@string/smallPlant"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/tryAgain"
@@ -41,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_blue_light"
         android:text="@string/tryAgain"
         android:textColor="@android:color/holo_orange_light" />
 
@@ -50,6 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:background="@android:color/holo_blue_light"
         android:text="@string/exit"
         android:textColor="@android:color/holo_orange_light" />
 

@@ -36,8 +36,8 @@ public class Question2Activity extends Activity{
 	View.OnClickListener lightClick = new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			Responses.growPlantWithLight();
-			Intent loading = new Intent(Question2Activity.this, LoadingActivity.class);
+			MainActivity.responses.growPlantWithLight();
+			Intent loading = new Intent(Question2Activity.this, OutputActivity.class);
 			Question2Activity.this.startActivity(loading);
 		}
 	};
@@ -45,8 +45,8 @@ public class Question2Activity extends Activity{
 	View.OnClickListener darkClick = new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			Responses.growPlantInDarkness();
-			Intent loading = new Intent(Question2Activity.this, LoadingActivity.class);
+			MainActivity.responses.growPlantInDarkness();
+			Intent loading = new Intent(Question2Activity.this, OutputActivity.class);
 			Question2Activity.this.startActivity(loading);
 		}
 	};

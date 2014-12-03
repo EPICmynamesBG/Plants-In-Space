@@ -36,7 +36,7 @@ public class Question1Activity extends Activity{
 	View.OnClickListener earthClick = new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			Responses.growPlantOnEarth();
+			MainActivity.responses.growPlantOnEarth();
 			Intent nextQuestion = new Intent(Question1Activity.this, Question2Activity.class);
 			Question1Activity.this.startActivity(nextQuestion);
 		}
@@ -45,7 +45,7 @@ public class Question1Activity extends Activity{
 	View.OnClickListener spaceClick = new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			Responses.growPlantInSpace();
+			MainActivity.responses.growPlantInSpace();
 			Intent nextQuestion = new Intent(Question1Activity.this, Question2Activity.class);
 			Question1Activity.this.startActivity(nextQuestion);
 		}

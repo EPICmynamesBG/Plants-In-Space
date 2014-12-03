@@ -1,6 +1,7 @@
 package honr.gamedesign.plantsinspace.activities;
 
 import honr.gamedesign.plantsinspace.R;
+import honr.gamedesign.plantsinspace.backend.Responses;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity{
 	
+	public static Responses responses= new Responses();
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);

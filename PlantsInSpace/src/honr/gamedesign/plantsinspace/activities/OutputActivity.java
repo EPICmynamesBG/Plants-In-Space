@@ -1,10 +1,8 @@
 package honr.gamedesign.plantsinspace.activities;
 
 import honr.gamedesign.plantsinspace.R;
-import honr.gamedesign.plantsinspace.backend.Responses;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
@@ -12,17 +10,21 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class OutputActivity extends Activity{
 
+	boolean onEarth=MainActivity.responses.getQuestion1Respose();
+	boolean withLight=MainActivity.responses.getQuestion2Response();
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		getPlant();
 		setFullScreen();
 		setContentView(R.layout.output);
-		
+		//setBackground();
+		getPlant();
 		
 		
 		Button exitButton = (Button) findViewById(R.id.exit);
@@ -56,35 +58,56 @@ public class OutputActivity extends Activity{
 	};
 	
 	private void getPlant(){
-		boolean onEarth, withLight;
 		Drawable newPlant;
-		onEarth=Responses.getQuestion1Respose();
-		withLight=Responses.getQuestion2Response();
 		ImageView plant = (ImageView) findViewById(R.id.plant);
 		TextView output= (TextView) findViewById(R.id.ouputText);
 		
 		if(onEarth && withLight){
-			newPlant=Resources.getSystem().getDrawable(R.drawable.seedling_6);
+			newPlant=getResources().getDrawable(R.drawable.seedling_6);
 			output.setText(R.string.medLargePlant);
 		}
 		else if(onEarth && !withLight){
-			newPlant=Resources.getSystem().getDrawable(R.drawable.seedling_4);
+			newPlant=getResources().getDrawable(R.drawable.seedling_4);
 			output.setText(R.string.regPlant);
 		}
 		else if(!onEarth && withLight){
-			newPlant=Resources.getSystem().getDrawable(R.drawable.seedling_8);
+			newPlant=getResources().getDrawable(R.drawable.seedling_8);
 			output.setText(R.string.bigPlant);
 		}
 		else if(!onEarth && !withLight){
-			newPlant=Resources.getSystem().getDrawable(R.drawable.seedling_2);
+			newPlant=getResources().getDrawable(R.drawable.seedling_2);
 			output.setText(R.string.smallPlant);
 		}
 		else{
-			newPlant=Resources.getSystem().getDrawable(R.drawable.plantsinspacetext);
+			newPlant=getResources().getDrawable(R.drawable.plantsinspacetext);
 			output.setText(R.string.errorPlant);
 		}
 		plant.setImageDrawable(newPlant);
-		
+		plant.invalidate();
 	}
+
 	
+	private void setBackground(){
+		Drawable newBackground;
+		RelativeLayout background=(RelativeLayout) findViewById(R.layout.output);
+		if(onEarth && withLight){
+			newBackground=getResources().getDrawable(R.drawable.dirt);
+		}
+		else if(onEarth && !withLight){
+			newBackground=getResources().getDrawable(R.drawable.dirt);
+		}
+		else if(!onEarth && withLight){
+			newBackground=getResources().getDrawable(R.drawable.outerspace);
+		}
+		else if(!onEarth && !withLight){
+			newBackground=getResources().getDrawable(R.drawable.outerspace);
+		}
+		else{
+			newBackground=getResources().getDrawable(R.drawable.dirt);
+		}
+		background.setBackground(newBackground);;
+		background.invalidate();
+	}
 }
+	
+

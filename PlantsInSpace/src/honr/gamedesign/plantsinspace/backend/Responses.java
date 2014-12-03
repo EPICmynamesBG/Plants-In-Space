@@ -4,6 +4,10 @@ public class Responses {
 	
 	private static boolean onEarth, withLight;
 
+	public static void Responses(){
+		
+	}
+	
 	public static void growPlantOnEarth(){
 		onEarth=true;
 	}
@@ -20,11 +24,11 @@ public class Responses {
 		withLight=false;
 	}
 	
-	public static boolean getQuestion1Respose(){
+	public boolean getQuestion1Respose(){
 		return onEarth;
 	}
 	
-	public static boolean getQuestion2Response(){
+	public boolean getQuestion2Response(){
 		return withLight;
 	}
 	
