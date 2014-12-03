@@ -9,5 +9,12 @@
     <string name="sunlight">Sunlight</string>
     <string name="darkness">Darkness</string>
     <string name="growingPlant">Please wait while your plant grows...</string>
+    <string name="errorPlant">Whoops, looks like that was a bad seed.</string>
+    <string name="tryAgain">Try Again</string>
+    <string name="exit">Exit</string>
+    <string name="bigPlant">Whoa! Look at that huge plant! Your plants height is 8 inches!</string>
+    <string name="medLargePlant">That\'s a large plant! Your plants height is 6 inches.</string>
+    <string name="regPlant">That\'s a pretty normal sized plant. Your plants height is 4 inches.</string>
+    <string name="smallPlant">That\'s a small plant. Your plants height is 2 inches.</string>
 
 </resources>

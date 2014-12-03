@@ -21,13 +21,14 @@
         android:layout_centerHorizontal="true"
         android:contentDescription="Load progress"
         android:fitsSystemWindows="true"
+        android:max="100"
         android:maxWidth="100dp"
         android:progressBackgroundTint="@android:color/holo_blue_dark"
         android:progressTint="@android:color/holo_blue_bright"
         android:visibility="visible" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/results"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/loadingCircle"
