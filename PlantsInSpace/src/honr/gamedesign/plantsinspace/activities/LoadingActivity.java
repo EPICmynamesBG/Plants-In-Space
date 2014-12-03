@@ -23,8 +23,8 @@ public class LoadingActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setFullScreen();
-		progressBarController();
 		setContentView(R.layout.loading);
+		progressBarController();
 
 	}
 
@@ -38,6 +38,7 @@ public class LoadingActivity extends Activity {
 	
 	private void progressBarController(){
 		mProgress = (ProgressBar) findViewById(R.id.progressBar);
+		
 
         new Thread(new Runnable() {
             public void run() {
