@@ -12,10 +12,11 @@ import android.widget.Button;
 
 public class Question2Activity extends Activity{
 
+	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.question2);
 		setFullScreen();
+		setContentView(R.layout.question2);
 		
 		Button sunButton = (Button) findViewById(R.id.sunlightButton);
 		sunButton.setOnClickListener(lightClick);

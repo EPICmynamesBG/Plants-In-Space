@@ -16,11 +16,13 @@ import android.widget.TextView;
 
 public class OutputActivity extends Activity{
 
+	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		getPlant();
-		setContentView(R.layout.output);
 		setFullScreen();
+		setContentView(R.layout.output);
+		
 		
 		
 		Button exitButton = (Button) findViewById(R.id.exit);

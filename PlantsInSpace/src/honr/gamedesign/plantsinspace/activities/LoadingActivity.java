@@ -19,13 +19,13 @@ public class LoadingActivity extends Activity {
     private int mProgressStatus = 0;
     private Handler mHandler = new Handler();
     
+    @Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.loading);
 		setFullScreen();
-		
 		progressBarController();
-		
+		setContentView(R.layout.loading);
+
 	}
 
 	private void setFullScreen() {

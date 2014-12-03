@@ -12,10 +12,11 @@ import android.widget.Button;
 
 public class Question1Activity extends Activity{
 
+	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.question1);
 		setFullScreen();
+		setContentView(R.layout.question1);
 		
 		Button earthButton = (Button) findViewById(R.id.earthButton);
 		earthButton.setOnClickListener(earthClick);
