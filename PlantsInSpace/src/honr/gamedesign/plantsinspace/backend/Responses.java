@@ -4,23 +4,23 @@ public class Responses {
 	
 	private static boolean onEarth, withLight;
 
-	public static void Responses(){
+	public Responses(){
 		
 	}
 	
-	public static void growPlantOnEarth(){
+	public void growPlantOnEarth(){
 		onEarth=true;
 	}
 	
-	public static void growPlantInSpace(){
+	public void growPlantInSpace(){
 		onEarth=false;
 	}
 	
-	public static void growPlantWithLight(){
+	public void growPlantWithLight(){
 		withLight=true;
 	}
 	
-	public static void growPlantInDarkness(){
+	public void growPlantInDarkness(){
 		withLight=false;
 	}
 	

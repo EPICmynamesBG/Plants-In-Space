@@ -8,7 +8,7 @@
     <string name="lightOrDark">Will your plant grow in sunlight or darkness?</string>
     <string name="sunlight">Sunlight</string>
     <string name="darkness">Darkness</string>
-    <string name="growingPlant">Please wait while your plant grows...</string>
+    <string name="growingPlant">Please wait while your plant grows&#8230;</string>
     <string name="errorPlant">Whoops, looks like that was a bad seed.</string>
     <string name="tryAgain">Try Again</string>
     <string name="exit">Exit</string>
@@ -16,5 +16,8 @@
     <string name="medLargePlant">That\'s a large plant! Your plants height is 6 inches.</string>
     <string name="regPlant">That\'s a pretty normal sized plant. Your plants height is 4 inches.</string>
     <string name="smallPlant">That\'s a small plant. Your plants height is 2 inches.</string>
+    <string name="contentDescProgressBar">Progress Bar</string>
+    <string name="plant">Plant</string>
+    <string name="results">Results: </string>
 
 </resources>

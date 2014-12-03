@@ -6,6 +6,7 @@
 
     <ImageView
         android:id="@+id/plant"
+        android:contentDescription="@string/plant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -19,9 +20,11 @@
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="40dp"
-        android:text="Results:"
+        android:text="@string/results"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+         />
 
     <TextView
         android:id="@+id/ouputText"
@@ -34,7 +37,8 @@
         android:layout_toEndOf="@id/plant"
         android:text="@string/smallPlant"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/tryAgain"
@@ -42,8 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:backgroundTint="@android:color/holo_blue_light"
+        android:background="@android:color/holo_blue_light"
         android:text="@string/tryAgain"
         android:textColor="@android:color/holo_orange_light" />
 
@@ -52,9 +55,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:backgroundTint="@android:color/holo_blue_light"
+        android:background="@android:color/holo_blue_light"
         android:text="@string/exit"
         android:textColor="@android:color/holo_orange_light" />
 

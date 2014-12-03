@@ -6,7 +6,7 @@
 
     <ImageView
         android:id="@+id/sun"
-        android:contentDescription="Sunlight"
+        android:contentDescription="@string/sunlight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignBottom="@+id/sun"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:background="@android:color/transparent"
         android:text="@string/sunlight"
         android:textColor="@android:color/holo_blue_light"

@@ -6,7 +6,7 @@
 
     <ImageView
         android:id="@+id/earth"
-        android:contentDescription="Earth"
+        android:contentDescription="@string/Earth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -30,7 +30,7 @@
 
     <ImageView
         android:id="@+id/plantsinspacetextimage"
-        android:contentDescription="Plants in Space"
+        android:contentDescription="@string/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"

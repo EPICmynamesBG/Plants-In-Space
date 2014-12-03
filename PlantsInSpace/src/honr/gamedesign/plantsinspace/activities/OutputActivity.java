@@ -87,6 +87,7 @@ public class OutputActivity extends Activity{
 	}
 
 	
+	@SuppressWarnings("unused")
 	private void setBackground(){
 		Drawable newBackground;
 		RelativeLayout background=(RelativeLayout) findViewById(R.layout.output);

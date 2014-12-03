@@ -6,6 +6,7 @@
 
     <ImageView
         android:id="@+id/plant"
+        android:contentDescription="@string/plant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -19,7 +20,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Results:"
+        android:text="@string/results"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@android:color/white"
         android:textStyle="bold" />

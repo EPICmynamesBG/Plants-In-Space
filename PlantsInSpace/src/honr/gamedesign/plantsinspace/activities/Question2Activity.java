@@ -1,7 +1,6 @@
 package honr.gamedesign.plantsinspace.activities;
 
 import honr.gamedesign.plantsinspace.R;
-import honr.gamedesign.plantsinspace.backend.Responses;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
